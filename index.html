@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Father's Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <audio id = "gaming" src="sounds/gaming.mp3"></audio>
+
+    <div class="screen_lock">
+        <div class="image_container">
+            <img src="assets/icon4.png" alt="" >
+        </div>
+        <div class="lock">
+            <div class="display">
+                <p>提示 : 今日日期 (MMDD)</p>
+            </div>
+            <div class="lock_row_container">
+
+                <div class="lock_row">
+                    <button class="btn" onclick="append_to_display('7')">7</button>
+                    <button class="btn" onclick="append_to_display('8')">8</button>
+                    <button class="btn" onclick="append_to_display('9')">9</button>
+                </div>
+                <div class="lock_row">
+                    <button class="btn" onclick="append_to_display('4')">4</button>
+                    <button class="btn" 
+                    onclick="append_to_display('5')">5</button>
+                    <button class="btn" onclick="append_to_display('6')">6</button>
+                </div>
+                <div class="lock_row">
+                    <button class="btn" onclick="append_to_display('1')">1</button>
+                    <button class="btn" onclick="append_to_display('2')">2</button>
+                    <button class="btn" onclick="append_to_display('3')">3</button>
+                </div>
+                <div class="lock_row special">
+                    <button class="btn zero" onclick="append_to_display('0')">0</button>
+                    <button class="btn enter" onclick="append_to_display('Enter')">Enter</button>
+                    <audio id="correct_sound" src="sounds/correct.mp3"></audio>
+                    <audio id="wrong_sound" src="sounds/wrong.mp3"></audio>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box_container hide">
+        <label id="label_text">準備好未?</label>
+        <div class="button_row">
+            <button onclick="btn_continue()">Yes</button>
+            <button onclick="chose_no()">No</button>
+        </div>
+    </div>
+
+    <audio id="main_music" src="sounds/music.mp3"></audio>
+    <div class="display_container hide ">
+        <!-- <p class="final_text">🎉🎉父親節快樂!🎉🎉</p> -->
+        <div class="display_msg">
+            <div class="heading">
+                <!-- <h2>爸爸辛苦了!</h2> -->
+            </div>
+            <div class="content">
+                <!-- <p>天天開心!</p> -->
+            </div>
+        </div>
+        <div class="display_image">
+            <img src="assets/family_0.png" alt="family_photo_loop">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
